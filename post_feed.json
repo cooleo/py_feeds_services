@@ -1,0 +1,72 @@
+{
+    "category":{
+      "name":"Music",
+      "slug":"Music"
+    },
+   "video":{
+      "title":"BEST OF DOWNHILL & FREERIDE 2016!",
+      "description":"BEST OF DOWNHILL & FREERIDE 2016! -------------------------------- Get your 'Rhino Gear' clothing today! Website - http://rhinogear.bigcartel.com/ ...",
+      "duaration":"230",
+      "sourceId":"DDxB9LH7hvI",
+      "thumbBucket":"thumb",
+      "thumb":"https://i.ytimg.com/vi/DDxB9LH7hvI/hqdefault.jpg",
+      "type":1,
+      "name_source":"Mountain bikes are awesome",
+   "logo_source":"mountainbikesareawesomechannel.png",
+   "url_source":"https://www.youtube.com/channel/UCrU8pOalM7z3mKsXzwAy17A",
+   "from_source":"youtube.com",
+      "extention":"embed"
+   },
+   "title":"BEST OF DOWNHILL & FREERIDE 2016!",
+   "content":"",
+   "name_source":"Mountain bikes are awesome",
+   "logo_source":"mountainbikesareawesomechannel.png",
+   "url_source":"https://www.youtube.com/channel/UCrU8pOalM7z3mKsXzwAy17A",
+   "from_source":"youtube.com",
+   "description":"BEST OF DOWNHILL & FREERIDE 2016! -------------------------------- Get your 'Rhino Gear' clothing today! Website - http://rhinogear.bigcartel.com/ ...",
+   "url":"http://www.youtube.com/watch?v=DDxB9LH7hvI",
+   "thumbBucket":"thumb",
+   "thumb":"https://i.ytimg.com/vi/DDxB9LH7hvI/hqdefault.jpg",
+   "likes":2,
+   "shares":0,
+   "pins":1,
+   "comments":0,
+   "points":0,
+   "type":1,
+   "status":0,
+   "tags":[
+
+     {"name":"#DH","slug":"#DH"},
+     {"name":"#downhill","slug":"#downhill"},
+     {"name":"#enduro","slug":"#enduro"},
+     {"name":"#mtb","slug":"#mtb"},
+     {"name":"#allmountain","slug":"#allmountain"},
+     {"name":"#video","slug":"#video"},
+     {"name":"#youtube","slug":"#youtube"},
+     {"name":"#post","slug":"#post"}
+
+   ],
+   "image":{
+      "original":{
+         "version":"original",
+         "url":"https://s3-eu-central-1.amazonaws.com/unchain-medias/photos/M5/T6/uv-large.jpg",
+         "path":"photos/M5/T6/uv-large.jpg"
+      },
+      "medium":{
+         "version":"medium",
+         "url":"https://s3-eu-central-1.amazonaws.com/unchain-medias/photos/M5/T6/uv-medium.jpg",
+         "path":"photos/M5/T6/uv-medium.jpg"
+      },
+      "small":{
+         "version":"small",
+         "url":"https://s3-eu-central-1.amazonaws.com/unchain-medias/photos/M5/T6/uv-small.jpg",
+         "path":"photos/M5/T6/uv-small.jpg"
+      },
+      "thumb":{
+         "version":"thumb",
+         "url":"https://s3-eu-central-1.amazonaws.com/unchain-medias/photos/M5/T6/uv-thumb.jpg",
+         "path":"photos/M5/T6/uv-thumb.jpg"
+      }
+   },
+   "views":6
+}

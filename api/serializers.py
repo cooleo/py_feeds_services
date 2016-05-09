@@ -90,31 +90,12 @@ class NewsSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class FeedSerializer(serializers.HyperlinkedModelSerializer):
-    photo = serializers.HyperlinkedRelatedField(
-        many=False,
-        read_only=True,
-        view_name='photo'
-    )
-    video = serializers.HyperlinkedRelatedField(
-        many=False,
-        read_only=True,
-        view_name='video'
-    )
-    news = serializers.HyperlinkedRelatedField(
-        many=False,
-        read_only=True,
-        view_name='news'
-    )
-    tags = serializers.HyperlinkedRelatedField(
-        many=True,
-        read_only=True,
-        view_name='tags'
-    )
-    category = serializers.HyperlinkedRelatedField(
-        many=False,
-        read_only=True,
-        view_name='category'
-    )
+    tags = TagSerializer(many=True, read_only=False)
+    photo = PhotoSerializer(required=False, read_only=False)
+    video = VideoSerializer(required=False, read_only=False)
+    news = NewsSerializer(required=False, read_only=False)
+    images = PhotoSerializer(many=True, read_only=False)
+    category = CategorySerializer(required=False, read_only=False)
 
     class Meta:
         model = Feed
@@ -122,6 +103,35 @@ class FeedSerializer(serializers.HyperlinkedModelSerializer):
             'title', 'description', 'bucket', 'thumb', 'url', 'content', 'likes', 'shares', 'pins', 'comments', 'views',
             'popular', 'tags', 'category', 'from_source', 'logo_source', 'name_source', 'createdAt', 'updatedAt',
             'type', 'status', 'video', 'images', 'photo', 'news')
+
+    def create(self, validated_data):
+        # profile_data = validated_data.pop('profile')
+        # user = User.objects.create(**validated_data)
+        # Profile.objects.create(user=user, **profile_data)
+
+        photo_data = validated_data.pop('photo')
+        video_data = validated_data.pop('video')
+        news_data = validated_data.pop('news')
+        category_data = validated_data.pop('category')
+        images_data = validated_data.pop('images')
+        tags_data = validated_data.pop('tags')
+        if photo_data is not None:
+            photo = Photo.objects.create(**photo_data)
+        if video_data is not None:
+            video = Video.objects.create(**video_data)
+        if news_data is not None:
+            news = News.objects.create(**news_data)
+        if category_data is not None:
+            category = Category.objects.create(**category_data)
+        if images_data is not None:
+            images = Photo.objects.create(*images_data)
+        if tags_data is not None:
+            tags = Tag.objects.create(*tags_data)
+
+        feed = Feed.objects.create(photo=photo, video=video, news=news, category=category, images=images, tags=tags,
+                                   **validated_data)
+
+        return feed
 
 
 class NotificationSerializer(serializers.HyperlinkedModelSerializer):
