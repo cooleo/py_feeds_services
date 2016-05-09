@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Sqlite (Xerial) - db.sqlite3" uuid="b7a86190-32c4-4ab0-aa11-fcd743a174b3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="HSQLDB (Local) - jdbc:hsqldb:file:/Users/nguyendanghung/CooleTeam/projects/pythons/py_feeds_services/db.sqlite3/" uuid="effd6016-2472-4b47-8c6f-4eb2635c0a08">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
